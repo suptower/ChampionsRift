@@ -2,3 +2,8 @@ name: ChampionsRift
 version: '${project.version}'
 main: de.suptower.championsrift.ChampionsRift
 api-version: '1.20'
+authors:
+  - suptower
+description: ChampionsRift Plugin for Battle Royale.
+prefix: ChampRift
+website: www.github.com/suptower/championsrift
