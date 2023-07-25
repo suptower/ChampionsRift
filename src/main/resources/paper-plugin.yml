@@ -1,0 +1,4 @@
+name: ChampionsRift
+version: '${project.version}'
+main: de.suptower.championsrift.ChampionsRift
+api-version: '1.20'
