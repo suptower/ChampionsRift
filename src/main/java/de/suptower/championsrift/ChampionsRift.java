@@ -1,13 +1,13 @@
 package de.suptower.championsrift;
 
+import de.suptower.championsrift.commands.ChampionsRiftCommandManager;
 import de.suptower.championsrift.listeners.playerJoin;
 import de.suptower.championsrift.listeners.playerLeave;
-import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.util.Objects;
 
 public final class ChampionsRift extends JavaPlugin implements Listener {
 
@@ -17,6 +17,9 @@ public final class ChampionsRift extends JavaPlugin implements Listener {
         // Register Listeners
         Bukkit.getPluginManager().registerEvents(new playerJoin(), this);
         Bukkit.getPluginManager().registerEvents(new playerLeave(), this);
+
+        // Register Commands
+        Objects.requireNonNull(Bukkit.getPluginCommand("crift")).setExecutor(new ChampionsRiftCommandManager());
     }
 
     @Override

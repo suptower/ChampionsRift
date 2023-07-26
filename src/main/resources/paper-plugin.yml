@@ -6,4 +6,9 @@ authors:
   - suptower
 description: ChampionsRift Plugin for Battle Royale.
 prefix: ChampRift
-website: www.github.com/suptower/championsrift
+website: www.github.com/suptower/ChampionsRift
+commands:
+  crift:
+    description: Main Command for Champions Rift plugin.
+    usage: /<command> <args>
+    aliases: [cr, championsrift]
